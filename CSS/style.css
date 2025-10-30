@@ -1,1 +1,102 @@
 /* aaa */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ff6b6b, #eeaeca);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    color: #FF6B6B;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+p#question {
+    font-size: 1.4em;
+    margin: 20px 0;
+    color: #333;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+#yesBtn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#yesBtn:hover {
+    background-color: #45a049;
+}
+
+#noBtn {
+    background-color: #f44336;
+    color: white;
+}
+
+#noBtn:hover {
+    background-color: #e53935;
+}
+
+#restartBtn {
+    background-color: #2196F3;
+    color: white;
+    margin-top: 20px;
+}
+
+#restartBtn:hover {
+    background-color: #1976D2;
+}
+
+.hidden {
+    display: none;
+}
+
+#result h2 {
+    color: #2E7D32;
+    margin-bottom: 15px;
+}
+
+#answer {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0;
+}
+
