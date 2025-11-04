@@ -1,11 +1,22 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akinator McDonald's</title>
+    <script src="./JS/script.js" defer></script>
+</head>
 
 <body>
-    <div id="pregunta">Que producto tienes en mente?</div>
-    <button id="si">Sí</button>
-    <button id="no">No</button>
-    <button id="ns">No sé</button>
+    <h2>Piensa en un producto de McDonald's</h2>
+    <div id="pregunta">¿Preparado para jugar?</div>
+
+    <div style="margin-top: 20px;">
+        <button onclick="responder(true)" id="si">Sí</button>
+        <button onclick="responder(false)" id="no">No</button>
+        <button onclick="cambiarPregunta()" id="ns">No sé</button>
+    </div>
 </body>
 
 </html>
