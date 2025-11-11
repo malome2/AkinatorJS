@@ -125,7 +125,7 @@ function responder(valor) {
     if (productoPendiente) {
         if (ronda >= RONDAS_MINIMAS) {
             setTimeout(() => {
-                contenedor.innerHTML = `¡Creo que estás pensando en <b>${productoPendiente.nombre}</b> <br><br>`;
+                contenedor.innerHTML = `¡Creo que estás pensando en <b>${productoPendiente.nombre}</b> 🍗!`;
             }, 800);
         } else {
             setTimeout(cambiarPregunta, 700);
@@ -140,7 +140,7 @@ function responder(valor) {
     // Si queda solo un producto, lo guardamos, pero seguimos preguntando
     if (productos.length === 1) {
         productoPendiente = productos[0];
-
+        
         setTimeout(cambiarPregunta, 1000);
         return;
     }

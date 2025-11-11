@@ -1,22 +1,234 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akinator McDonald's</title>
-    <script src="./JS/script.js" defer></script>
+    <title>Akinator McDonald's - Adivina el Producto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 
 <body>
-    <h2>Piensa en un producto de McDonald's</h2>
-    <div id="pregunta">¿Preparado para jugar?</div>
 
-    <div style="margin-top: 20px;">
-        <button onclick="responder(true)" id="si">Sí</button>
-        <button onclick="responder(false)" id="no">No</button>
-        <button onclick="cambiarPregunta()" id="ns">No sé</button>
-    </div>
+    <header>
+        <nav>
+            <div class="logo">Akinator McDonald's</div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link active" data-section="inicio">Inicio</a></li>
+                <li><a href="#productos" class="nav-link" data-section="productos">Productos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SECCIÓN INICIO -->
+        <section id="inicio" class="active">
+            <div class="hero">
+                <h1>Akinator de Productos McDonald's</h1>
+                <p>Piensa en un producto del menú y el Akinator intentará adivinarlo</p>
+                <div class="status-notice">Función de juego en desarrollo</div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN PRODUCTOS -->
+        <section id="productos">
+            <h1 class="page-title">Productos Disponibles</h1>
+
+            <div class="product-category">
+                <h2 class="category-header">Hamburguesas de Vacuno</h2>
+                <div class="product-grid">
+                    <div class="product-card"><img src="img/bigmac.png" alt="Big Mac">
+                        <p class="product-name">Big Mac</p>
+                    </div>
+                    <div class="product-card"><img src="img/cuartodelibra.png" alt="Cuarto de Libra">
+                        <p class="product-name">Cuarto de Libra</p>
+                    </div>
+                    <div class="product-card"><img src="img/mcroyaledeluxe.png" alt="McRoyale Deluxe">
+                        <p class="product-name">McRoyal Deluxe</p>
+                    </div>
+                    <div class="product-card"><img src="img/mcextremebacon.png" alt="McExtreme Bacon">
+                        <p class="product-name">McExtreme Bacon</p>
+                    </div>
+                    <div class="product-card"><img src="img/hamburguesa.png" alt="Hamburguesa">
+                        <p class="product-name">Hamburguesa</p>
+                    </div>
+                    <div class="product-card"><img src="img/cuartodelibra.png" alt="Cheeseburger">
+                        <p class="product-name">Cheeseburger</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-category">
+                <h2 class="category-header">Hamburguesas de Pollo</h2>
+                <div class="product-grid">
+                    <div class="product-card"><img src="img/mcpollo.png" alt="McPollo">
+                        <p class="product-name">McPollo</p>
+                    </div>
+                    <div class="product-card"><img src="img/CBO.png" alt="CBO">
+                        <p class="product-name">CBO</p>
+                    </div>
+                    <div class="product-card"><img src="img/mccrispybbq&bacon.png" alt="McCrispy BBQ & Bacon">
+                        <p class="product-name">McCrispy BBQ & Bacon</p>
+                    </div>
+                    <div class="product-card"><img src="img/mccrispyoriginal.png" alt="McCrispy Original">
+                        <p class="product-name">McCrispy Original</p>
+                    </div>
+                    <div class="product-card"><img src="img/chicken&cheese.png" alt="Chicken & Cheese">
+                        <p class="product-name">Chicken & Cheese</p>
+                    </div>
+                    <div class="product-card"><img src="img/chickenburger.png" alt="Chicken Burger">
+                        <p class="product-name">Chicken Burger</p>
+                    </div>
+                    <div class="product-card"><img src="img/mcwrap.png" alt="McWrap">
+                        <p class="product-name">McWrap</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-category">
+                <h2 class="category-header">Hamburguesas de Pescado</h2>
+                <div class="product-grid">
+                    <div class="product-card"><img src="img/mcfish.png" alt="McFish">
+                        <p class="product-name">McFish</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-category">
+                <h2 class="category-header">Patatas</h2>
+                <div class="product-grid">
+                    <div class="product-card"><img src="img/fritas.png" alt="Patatas Fritas">
+                        <p class="product-name">Patatas Fritas</p>
+                    </div>
+                    <div class="product-card"><img src="img/deluxe.png" alt="Patatas Deluxe">
+                        <p class="product-name">Patatas Deluxe</p>
+                    </div>
+                    <div class="product-card"><img src="img/topfriesbaconcheese.png" alt="Top Fries Bacon & Cheese">
+                        <p class="product-name">Top Fries Bacon & Cheese</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-category">
+                <h2 class="category-header">Complementos de Pollo</h2>
+                <div class="product-grid">
+                    <div class="product-card"><img src="img/nuggets.png" alt="McNuggets de pollo">
+                        <p class="product-name">McNuggets de pollo</p>
+                    </div>
+                    <div class="product-card"><img src="img/McNuggetsspicy.png" alt="Spicy McNuggets">
+                        <p class="product-name">Spicy McNuggets</p>
+                    </div>
+                    <div class="product-card"><img src="img/ChickenMcBites.png" alt="Chicken McBites">
+                        <p class="product-name">Chicken McBites</p>
+                    </div>
+                    <div class="product-card"><img src="img/Alitasdepollo.png" alt="Alitas de pollo">
+                        <p class="product-name">Alitas de pollo</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-category">
+                <h2 class="category-header">McFlurry</h2>
+                <div class="product-grid">
+                    <div class="product-card"><img src="img/McFlurryPistacho.png" alt="McFlurry Pistacho">
+                        <p class="product-name">McFlurry Pistacho</p>
+                    </div>
+                    <div class="product-card"><img src="img/McFlurryChipsAhoy.png" alt="McFlurry ChipsAhoy">
+                        <p class="product-name">McFlurry ChipsAhoy</p>
+                    </div>
+                    <div class="product-card"><img src="img/McFlurryoreo.png" alt="McFlurry Oreo">
+                        <p class="product-name">McFlurry Oreo</p>
+                    </div>
+                    <div class="product-card"><img src="img/McFlurrykitkat.png" alt="McFlurry Kitkat">
+                        <p class="product-name">McFlurry Kitkat</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-category">
+                <h2 class="category-header">Helados</h2>
+                <div class="product-grid">
+                    <div class="product-card"><img src="img/Conohelado.PNG" alt="Cono de helado">
+                        <p class="product-name">Cono de helado</p>
+                    </div>
+                    <div class="product-card"><img src="img/SundaePistacho.PNG" alt="Sundae Pistacho">
+                        <p class="product-name">Sundae Pistacho</p>
+                    </div>
+                    <div class="product-card"><img src="img/SundaeChocolate.PNG" alt="Sundae Chocolate">
+                        <p class="product-name">Sundae Chocolate</p>
+                    </div>
+                    <div class="product-card"><img src="img/SundaeCaramelo.PNG" alt="Sundae Caramelo">
+                        <p class="product-name">Sundae Caramelo</p>
+                    </div>
+                    <div class="product-card"><img src="img/SundaeChocolateBlanco.PNG" alt="Sundae Chocolate Blanco">
+                        <p class="product-name">Sundae Chocolate Blanco</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-category">
+                <h2 class="category-header">Otros Postres</h2>
+                <div class="product-grid">
+                    <div class="product-card"><img src="img/Danonino.png" alt="Danonino">
+                        <p class="product-name">Danonino</p>
+                    </div>
+                    <div class="product-card"><img src="img/Manzana.png" alt="Manzana">
+                        <p class="product-name">Manzana</p>
+                    </div>
+                    <div class="product-card"><img src="img/Apple-Pie.png" alt="Apple Pie">
+                        <p class="product-name">Apple Pie</p>
+                    </div>
+                    <div class="product-card"><img src="img/McDalenaChocolate.png" alt="McDalena Chocolate">
+                        <p class="product-name">McDalena Chocolate</p>
+                    </div>
+                    <div class="product-card"><img src="img/McPopChocolateBlanco.png" alt="McPop Chocolate Blanco">
+                        <p class="product-name">McPop Chocolate Blanco</p>
+                    </div>
+                    <div class="product-card"><img src="img/CookieChocolate.png" alt="Cookie Chocolate">
+                        <p class="product-name">Cookie Chocolate</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-category">
+                <h2 class="category-header">Bebidas</h2>
+                <div class="product-grid">
+                    <div class="product-card"><img src="img/CocaCola.png" alt="Coca-Cola">
+                        <p class="product-name">Coca-Cola</p>
+                    </div>
+                    <div class="product-card"><img src="img/Fanta.png" alt="Fanta Naranja Zero">
+                        <p class="product-name">Fanta Naranja Zero</p>
+                    </div>
+                    <div class="product-card"><img src="img/SpriteZero.png" alt="SpriteZero">
+                        <p class="product-name">Sprite Zero</p>
+                    </div>
+                    <div class="product-card"><img src="img/Aquarius.png" alt="Aquarius Zero">
+                        <p class="product-name">Aquarius Zero</p>
+                    </div>
+                    <div class="product-card"><img src="img/Mahou.png" alt="Cerveza Mahou">
+                        <p class="product-name">Cerveza Mahou</p>
+                    </div>
+                    <div class="product-card"><img src="img/Agua.png" alt="Agua">
+                        <p class="product-name">Agua Mineral Nestlé Aquarel</p>
+                    </div>
+                    <div class="product-card"><img src="img/Naranja.png" alt="Naranja">
+                        <p class="product-name">Tropicana Pure Premium Naranja</p>
+                    </div>
+                    <div class="product-card"><img src="img/ZumoManzana.png" alt="ZumoManzana">
+                        <p class="product-name">Tropicana Pure Premium Manzana</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Akinator McDonald's. Proyecto educativo.</p>
+    </footer>
+
+    <!--<script src="script.js"></script>-->
 </body>
 
 </html>
