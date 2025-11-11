@@ -1,0 +1,72 @@
+/* Fondo general con la imagen subida */
+body {
+    background: url("/img/background.png") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: brightness(0.8);
+}
+
+/* Título principal */
+h2 {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 2em;
+    color: #ffcc00;
+    text-shadow: 2px 2px 6px #000;
+}
+
+/* Cuadro de pregunta */
+#pregunta {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.85);
+    color: #222;
+    padding: 20px 40px;
+    border-radius: 15px;
+    font-size: 1.4em;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Botones */
+button {
+    font-size: 1.1em;
+    margin: 10px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+/* Botones de colores inspirados en McDonald's */
+#si {
+    background-color: #ffcc00;
+    color: #222;
+}
+
+#no {
+    background-color: #d32f2f;
+    color: white;
+}
+
+#ns {
+    background-color: #555;
+    color: white;
+}
+
+/* Efecto hover */
+button:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}

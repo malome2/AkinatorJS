@@ -154,3 +154,8 @@ function responder(valor) {
     // Si quedan varios, seguir preguntando
     setTimeout(cambiarPregunta, 700);
 }
+
+
+function abrirJuego(){
+    window.location.href = "juego.html"
+}
