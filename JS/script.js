@@ -125,7 +125,7 @@ function responder(valor) {
     if (productoPendiente) {
         if (ronda >= RONDAS_MINIMAS) {
             setTimeout(() => {
-                contenedor.innerHTML = `¡Creo que estás pensando en <b>${productoPendiente.nombre}</b> 🍗!`;
+                contenedor.innerHTML = `¡Creo que estás pensando en <b>${productoPendiente.nombre}</b>`;
             }, 800);
         } else {
             setTimeout(cambiarPregunta, 700);
