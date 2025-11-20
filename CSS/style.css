@@ -1,21 +1,26 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* BODY */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f5f5f5;
+    background-color: #fff8e1;
+    /* Amarillo suave de fondo */
     color: #333;
     line-height: 1.6;
 }
 
 /* NAVEGACIÓN */
 header {
-    background-color: #ffffff;
-    border-bottom: 1px solid #e0e0e0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #DA291C;
+    /* Rojo McDonald's */
+    border-bottom: 4px solid #FFC72C;
+    /* Amarillo */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 nav {
@@ -28,30 +33,34 @@ nav {
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    /* Fuente más moderna */
     font-weight: 700;
-    color: #292929;
-    letter-spacing: -0.5px;
+    font-size: 2rem;
+    color: #FFC72C;
+    /* Amarillo McDonald's */
+    letter-spacing: -1px;
 }
 
 .nav-menu {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     list-style: none;
 }
 
 .nav-menu a {
-    color: #666;
+    color: #fff;
     text-decoration: none;
-    font-weight: 400;
-    font-size: 0.95rem;
-    transition: color 0.2s ease;
+    font-weight: 500;
+    font-size: 1rem;
     padding-bottom: 0.25rem;
     border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
 }
 
 .nav-menu a:hover {
-    color: #292929;
+    color: #FFC72C;
+    border-bottom: 2px solid #FFC72C;
 }
 
 /* CONTENIDO PRINCIPAL */
@@ -60,6 +69,8 @@ main {
     margin: 0 auto;
     padding: 3rem 2rem;
     min-height: calc(100vh - 200px);
+    text-align: center;
+    /* Centrar productos */
 }
 
 section {
@@ -93,39 +104,40 @@ section:target {
 }
 
 .hero h1 {
-    font-size: 2.5rem;
-    font-weight: 300;
-    color: #292929;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #DA291C;
+    /* Rojo */
     margin-bottom: 1rem;
-    letter-spacing: -0.5px;
 }
 
 .hero p {
     font-size: 1.1rem;
-    color: #666;
+    color: #555;
     margin-bottom: 2rem;
-    font-weight: 300;
 }
 
 .status-notice {
     display: inline-block;
-    background-color: #fff;
-    border: 1px solid #e0e0e0;
+    background-color: #FFC72C;
+    /* Amarillo */
+    color: #DA291C;
+    /* Rojo */
     padding: 1rem 2rem;
-    border-radius: 4px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.95rem;
     margin-top: 2rem;
-    color: #666;
-    font-size: 0.9rem;
 }
 
 /* PRODUCTOS */
 .page-title {
-    font-size: 2rem;
-    font-weight: 300;
-    color: #292929;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #DA291C;
     margin-bottom: 3rem;
-    letter-spacing: -0.5px;
-    text-align: center;
 }
 
 .product-category {
@@ -133,31 +145,34 @@ section:target {
 }
 
 .category-header {
-    font-size: 1.3rem;
-    font-weight: 500;
-    color: #292929;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: #DA291C;
     margin-bottom: 1.5rem;
     padding-bottom: 0.75rem;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 2px solid #FFC72C;
 }
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 2rem;
+    justify-content: center;
+    /* Centrar la grilla */
 }
 
 .product-card {
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 4px;
+    background-color: #fff8e1;
+    border: 2px solid #FFC72C;
+    border-radius: 12px;
     padding: 1.5rem;
     text-align: center;
-    transition: box-shadow 0.2s ease;
+    transition: all 0.3s ease;
 }
 
 .product-card:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 6px 12px rgba(218, 41, 28, 0.2);
+    transform: translateY(-5px);
 }
 
 .product-card img {
@@ -168,23 +183,23 @@ section:target {
 }
 
 .product-name {
-    font-size: 0.9rem;
-    color: #333;
-    font-weight: 400;
+    font-size: 1rem;
+    color: #DA291C;
+    font-weight: 500;
 }
 
 /* FOOTER */
 footer {
-    background-color: #292929;
-    color: #ffffff;
+    background-color: #DA291C;
+    color: #fff;
     text-align: center;
     padding: 2rem;
     margin-top: 4rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 footer p {
-    font-size: 0.85rem;
-    font-weight: 300;
+    font-size: 0.9rem;
 }
 
 /* RESPONSIVE */
@@ -195,43 +210,43 @@ footer p {
     }
 
     .nav-menu {
-        gap: 1.5rem;
+        gap: 1rem;
     }
 
     .hero h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     .product-grid {
-        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
         gap: 1.5rem;
     }
 }
 
+/* BOTONES */
 button {
-    background-color: #e53935;
-    /* Rojo fuerte */
-    color: white;
+    background-color: #FFC72C;
+    /* Amarillo */
+    color: #DA291C;
+    /* Rojo */
     border: none;
     width: 200px;
-    /* Ancho del botón */
     height: 60px;
-    /* Alto del botón (igual al ancho) */
-    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(218, 41, 28, 0.2);
     transition: all 0.3s ease;
 }
 
-/* Efecto hover */
 button:hover {
-    background-color: #c62828;
-    /* Rojo más oscuro */
+    background-color: #FFD833;
+    /* Amarillo más brillante */
     transform: scale(1.1);
-    /* Pequeño zoom */
 }
 
-/* Efecto al presionar */
 button:active {
     transform: scale(0.95);
 }
