@@ -70,3 +70,27 @@ button:hover {
     transform: scale(1.1);
     filter: brightness(1.2);
 }
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    body {
+        background: url("/img/background\ -\ copia.png") no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    h2 {
+        font-size: 1.5em; /* ajustar tamaño del título en móvil */
+        padding: 10px 20px;
+    }
+
+    #pregunta {
+        font-size: 1.2em; /* ajustar tamaño del cuadro de pregunta */
+        padding: 15px 20px;
+        width: 90%;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
