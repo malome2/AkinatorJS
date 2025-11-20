@@ -43,9 +43,11 @@ const preguntas = [
 let productos = [];
 let preguntaActual = null;
 let ronda = 0;
-const RONDAS_MINIMAS = 4;
+let RONDAS_MINIMAS = Math.floor(Math.random() * (8 - 4 + 1)) + 4;
 let productoPendiente = null; // guarda el producto que el juego ya sabe
 const PROB_PREGUNTA_MALA = 0.15; // 15% de preguntas “sin sentido”
+
+let historial = []; // historial de preguntas y respuestas
 
 async function cargarProductos() {
     const response = await fetch("./docs/productos.json");
@@ -59,9 +61,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 });
 
 function obtenerPregunta(preguntas, productos) {
-    // 🔹 Si ya sabemos el producto, solo hacemos preguntas aleatorias “de relleno”
     if (productoPendiente) {
-        // Reiniciar si todas fueron usadas
         if (preguntas.every(p => p.usada)) {
             preguntas.forEach(p => p.usada = false);
         }
@@ -73,10 +73,8 @@ function obtenerPregunta(preguntas, productos) {
         return p;
     }
 
-    // 🔹 En cualquier otro caso:
     const preguntasRestantes = preguntas.filter(p => !p.usada);
 
-    // Con probabilidad, pregunta “mala”
     if (Math.random() < PROB_PREGUNTA_MALA) {
         const randomIndex = Math.floor(Math.random() * preguntasRestantes.length);
         const p = preguntasRestantes[randomIndex];
@@ -84,13 +82,11 @@ function obtenerPregunta(preguntas, productos) {
         return p;
     }
 
-    // 🔹 Buscar preguntas que aún diferencien productos
     const preguntasValidas = preguntasRestantes.filter(p => {
         const valores = productos.map(prod => prod[p.key]);
         return new Set(valores).size > 1;
     });
 
-    // Si no hay preguntas válidas, lanzar alguna aleatoria “de relleno”
     if (preguntasValidas.length === 0) {
         if (preguntasRestantes.length === 0) {
             preguntas.forEach(p => p.usada = false);
@@ -106,10 +102,8 @@ function obtenerPregunta(preguntas, productos) {
     return preguntasValidas[indice];
 }
 
-
 function cambiarPregunta() {
     const contenedor = document.getElementById("pregunta");
-
     const nueva = obtenerPregunta(preguntas, productos);
     preguntaActual = nueva;
     contenedor.innerHTML = nueva.text;
@@ -121,7 +115,15 @@ function responder(valor) {
 
     const contenedor = document.getElementById("pregunta");
 
-    // Si ya tiene un producto pendiente, simplemente sigue preguntando hasta cumplir rondas
+    // Guardar estado en historial antes de filtrar
+    historial.push({
+        pregunta: preguntaActual,
+        respuesta: valor,
+        productosPrevios: [...productos],
+        productoPendientePrevio: productoPendiente,
+        rondaPrevio: ronda - 1
+    });
+
     if (productoPendiente) {
         if (ronda >= RONDAS_MINIMAS) {
             setTimeout(() => {
@@ -133,29 +135,39 @@ function responder(valor) {
         return;
     }
 
-    // Filtrar productos normalmente
     productos = productos.filter(p => p[preguntaActual.key] === valor);
     console.log(`Ronda ${ronda}:`, productos);
 
-    // Si queda solo un producto, lo guardamos, pero seguimos preguntando
     if (productos.length === 1) {
         productoPendiente = productos[0];
-        
         setTimeout(cambiarPregunta, 1000);
         return;
     }
 
-    // Si no queda ninguno
     if (productos.length === 0) {
         contenedor.innerHTML = "😅 No encuentro ningún producto que coincida...";
         return;
     }
 
-    // Si quedan varios, seguir preguntando
     setTimeout(cambiarPregunta, 700);
 }
 
+function volverAtras() {
+    if (historial.length === 0) return;
 
-function abrirJuego(){
+    const ultimo = historial.pop();
+
+    preguntaActual = ultimo.pregunta;
+    productos = ultimo.productosPrevios;
+    productoPendiente = ultimo.productoPendientePrevio;
+    ronda = ultimo.rondaPrevio;
+
+    // Marcar la pregunta como no usada para que pueda salir otra vez
+    preguntaActual.usada = false;
+
+    document.getElementById("pregunta").innerHTML = preguntaActual.text;
+}
+
+function abrirJuego() {
     window.location.href = "juego.html"
 }
