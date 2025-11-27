@@ -71,6 +71,11 @@ button:hover {
     filter: brightness(1.2);
 }
 
+.productoAdivinado {
+    width: 200px;
+    height: auto;
+}
+
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
     body {

@@ -39,7 +39,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "Cuarto de Libra con Queso",
@@ -81,7 +82,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": true
     },
     {
         "nombre": "McNuggets",
@@ -123,7 +125,9 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
+        
     },
     {
         "nombre": "Cono de Helado",
@@ -165,7 +169,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "McFlurry Pistacho",
@@ -207,7 +212,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "McFlurry KitKat",
@@ -249,7 +255,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "McFlurry Chipsahoy",
@@ -291,7 +298,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "Sundae de Pistacho",
@@ -333,7 +341,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "Sundae de Chocolate Blanco",
@@ -375,7 +384,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "Sundae de Caramelo",
@@ -417,7 +427,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "Sundae de Chocolate",
@@ -459,7 +470,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "Apple Pie",
@@ -501,7 +513,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "Manzana",
@@ -543,7 +556,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "Danonino",
@@ -585,7 +599,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "McDalena",
@@ -627,7 +642,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "McPops",
@@ -669,7 +685,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "Mc Crispy BBQ & Bacon",
@@ -711,7 +728,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "CBO",
@@ -753,7 +771,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": true
     },
     {
         "nombre": "McCrispy Original",
@@ -795,7 +814,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "Chicken & Cheese",
@@ -837,7 +857,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "McPollo",
@@ -879,7 +900,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": true
     },
     {
         "nombre": "Chicken Burger BBQ",
@@ -921,7 +943,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "McWrap",
@@ -963,7 +986,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "BigMac",
@@ -1005,7 +1029,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": true
     },
     {
         "nombre": "McExtreme Bacon",
@@ -1047,7 +1072,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": true
     },
     {
         "nombre": "McRoyale Deluxe",
@@ -1089,7 +1115,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": true
     },
     {
         "nombre": "Cheeseburger",
@@ -1131,7 +1158,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "Hamburguesa Clasica",
@@ -1173,7 +1201,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "McFish",
@@ -1215,7 +1244,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "TopFries Bacon & Cheese",
@@ -1257,7 +1287,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "Patatas Deluxe",
@@ -1299,7 +1330,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "Patatas Fritas",
@@ -1341,7 +1373,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "Spicy MCnuggets",
@@ -1383,7 +1416,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "Alitas de Pollo",
@@ -1425,7 +1459,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "Chicken McBites",
@@ -1467,7 +1502,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "Mahou",
@@ -1509,7 +1545,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "Agua",
@@ -1551,7 +1588,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "Aquarius",
@@ -1593,7 +1631,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "CocaCola",
@@ -1635,7 +1674,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "Zumo de Manzana",
@@ -1677,7 +1717,8 @@
         "zumo": true,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "Zumo de Naranja",
@@ -1719,7 +1760,8 @@
         "zumo": true,
         "naranja": true,
         "citrico": true,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "Sprite",
@@ -1761,7 +1803,8 @@
         "zumo": false,
         "naranja": false,
         "citrico": false,
-        "fanta": false
+        "fanta": false,
+        "dqueso": false
     },
     {
         "nombre": "Fanta de Naranja",
@@ -1803,6 +1846,7 @@
         "zumo": false,
         "naranja": true,
         "citrico": true,
-        "fanta": true
+        "fanta": true,
+        "dqueso": false
     }
 ]

@@ -37,7 +37,8 @@ const preguntas = [
     { key: "zumo", text: "¿Tu producto es un zumo?" },
     { key: "naranja", text: "¿Tu producto contiene naranja?" },
     { key: "citrico", text: "¿Tu producto es cítrico?" },
-    { key: "fanta", text: "¿Tu producto es Fanta?" }
+    { key: "fanta", text: "¿Tu producto es Fanta?" },
+    { key: "dqueso", text: "¿Tu tiene semillas de sesamo?" }
 ];
 
 let productos = [];
@@ -128,7 +129,7 @@ function responder(valor) {
         if (ronda >= RONDAS_MINIMAS) {
             setTimeout(() => {
                 contenedor.innerHTML = `
-                <img src="./img/${productoPendiente.nombre}.png" alt="">
+                <img src="./img/${productoPendiente.nombre}.png" alt="" class="productoAdivinado">
                 <br>
                 ¡Creo que estás pensando en <b>${productoPendiente.nombre}</b>
                 <br><br>
