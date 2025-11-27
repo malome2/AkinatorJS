@@ -127,7 +127,14 @@ function responder(valor) {
     if (productoPendiente) {
         if (ronda >= RONDAS_MINIMAS) {
             setTimeout(() => {
-                contenedor.innerHTML = `¡Creo que estás pensando en <b>${productoPendiente.nombre}</b>`;
+                contenedor.innerHTML = `
+                <img src="./img/${productoPendiente.nombre}.png" alt="">
+                <br>
+                ¡Creo que estás pensando en <b>${productoPendiente.nombre}</b>
+                <br><br>
+                <button id="reiniciarBtn" onclick="location.reload()">
+                    Volver a jugar
+                </button>`;
             }, 800);
         } else {
             setTimeout(cambiarPregunta, 700);
@@ -145,7 +152,7 @@ function responder(valor) {
     }
 
     if (productos.length === 0) {
-        contenedor.innerHTML = "😅 No encuentro ningún producto que coincida...";
+        contenedor.innerHTML = "No encuentro ningún producto que coincida...";
         return;
     }
 

@@ -63,7 +63,7 @@
         "bacon": false,
         "burrito": false,
         "barbacoa": true,
-        "tomate": true,
+        "tomate": false,
         "lechuga": true,
         "vaca": true,
         "doble": false,
@@ -84,7 +84,7 @@
         "fanta": false
     },
     {
-        "nombre": "McNugets",
+        "nombre": "McNuggets",
         "queso": false,
         "postre": false,
         "helado": false,
@@ -1470,7 +1470,7 @@
         "fanta": false
     },
     {
-        "nombre": "Cerveza",
+        "nombre": "Mahou",
         "queso": false,
         "postre": false,
         "helado": false,
